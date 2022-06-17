@@ -1,0 +1,27 @@
+services:
+  prometheus:
+    container_name: "prometheus"
+    build:
+      context: .
+      dockerfile: prometheus/Dockerfile
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus/config:/etc/prometheus/
+  
+  grafana:
+    container_name: "grafana"
+    build:
+      context: .
+      dockerfile: grafana/Dockerfile
+    env_file:
+      - ./grafana/.env.dev
+    environment:
+      - PROMETHEUS_URL=prometheus:9090
+    ports:
+      - 3000:3000
+    volumes:
+      - ./grafana/persist:/grafana-storage
+      - ./grafana/provisioning:/etc/grafana/provisioning/
+    depends_on:
+      - prometheus
