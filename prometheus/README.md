@@ -4,4 +4,4 @@
 
 ## Gotchas
 
-- config/prometheus**.yml** is important(.yaml will not work)
+- config/prometheus.yml (.yaml will not work)

@@ -11,7 +11,7 @@
 ## Add a dashboard
 
 1. `docker compose up`
-2. Point your browser to Grafana and navigate to dashboards (default localhost:3000/dashboards)
+2. Point your browser to Grafana and navigate to dashboards (default [localhost](http://localhost:3000/dashboards))
 3. Create a dashboard
 4. Export it to JSON
 5. Paste into `privisioning/dashboards/*.json`
