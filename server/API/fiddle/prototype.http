@@ -1,0 +1,32 @@
+
+@API=https://localhost:7155/graphql
+@GAME_ID={{start.response.body.id}}
+
+###
+
+GET {{API}}?sdl
+
+###
+# @name start
+
+POST {{API}}
+X-REQUEST-TYPE: GraphQL
+
+mutation {
+    startGame {
+      gameStatePayload {
+        id
+      }
+    }
+}
+
+###
+
+POST {{API}}
+X-REQUEST-TYPE: GraphQL
+
+query {
+    fetchGame(query: { gameId: "{{GAME_ID}}" }) {
+        id
+    }
+}
