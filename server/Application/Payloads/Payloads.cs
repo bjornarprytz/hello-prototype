@@ -1,6 +1,7 @@
 ﻿namespace Application.Payloads;
 
-public record GameStatePayload(Guid Id, Map Map, CrewDeck CrewDeck, BuildingDeck BuildingDeck, EnemyDeck EnemyDeck);
+public record GameStatePayload(Guid Id, string Facts);
+//public record GameStatePayload(Guid Id, Map Map, CrewDeck CrewDeck, BuildingDeck BuildingDeck, EnemyDeck EnemyDeck);
 public record Map(IEnumerable<Node> Nodes);
 public record Node(Building? Building, Crew? Crew, IEnumerable<Enemy> Enemies);
 public record CrewDeck(IEnumerable<Crew> Cards);

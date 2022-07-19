@@ -29,6 +29,7 @@ public static class ServiceCollectionExtensions
             .AddMutationType<Mutation>()
             .AddSubscriptionType<Subscription>()
 
+            .RegisterService<IMediator>()
             .RegisterService<ITopicEventSender>()
             .AddInMemorySubscriptions()
             ;

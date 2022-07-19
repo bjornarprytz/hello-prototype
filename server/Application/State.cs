@@ -1,8 +1,14 @@
 ﻿using Application.Payloads;
+using Bogus;
 
 namespace Application;
 
 public class State
 {
-    public GameStatePayload GameState { get; set; }
+    public State()
+    {
+        GameState = new GameStatePayload(Guid.NewGuid(), "Placeholder for persistent game state");
+    }
+    
+    public GameStatePayload GameState { get; }
 }

@@ -21,8 +21,6 @@ public class Start
         
         public async Task<Either<Error, GameStatePayload>> Handle(Command request, CancellationToken cancellationToken)
         {
-            _state.GameState = new Faker<GameStatePayload>().Generate();
-
             return _state.GameState;
         }
     }
