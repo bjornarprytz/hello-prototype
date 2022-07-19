@@ -19,6 +19,9 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
     {
         services.AddMediatR(typeof(Fetch.Handler).Assembly);
+        services.AddDbContext<DataContext>(opt =>
+            opt.UseSqlite(config.GetConnectionString("DefaultConnection")));
+        services.AddSingleton<State>();
 
         services
             .AddGraphQLServer()
@@ -29,18 +32,7 @@ public static class ServiceCollectionExtensions
             .RegisterService<ITopicEventSender>()
             .AddInMemorySubscriptions()
             ;
-
-        services.AddDbContext<DataContext>(opt =>
-            opt.UseSqlite(config.GetConnectionString("DefaultConnection")));
-        /*
-         * 
-        services.AddPooledDbContextFactory<DataContext>(opt =>
-            opt.UseSqlite(config.GetConnectionString("DefaultConnection")));
-        services.AddScoped<DataContext>();
-         */
-
-        services.AddSingleton<State>();
-
+        
         return services;
     }
 
