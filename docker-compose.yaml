@@ -1,10 +1,15 @@
 version: '2'
 services:
+
+  test-game:
+    container_name: "test-game"
+    build: client
+    ports:
+      - 1337:80
+
   prometheus:
     container_name: "prometheus"
-    build:
-      context: .
-      dockerfile: prometheus/Dockerfile
+    build: prometheus
     ports:
       - 9090:9090
     volumes:
@@ -12,9 +17,7 @@ services:
   
   grafana:
     container_name: "grafana"
-    build:
-      context: .
-      dockerfile: grafana/Dockerfile
+    build: grafana
     env_file:
       - ./grafana/.env.dev
     environment:

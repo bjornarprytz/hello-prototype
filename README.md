@@ -1,3 +1,9 @@
-# Observability Fiddle
+# Fiddling with deployment of game prototypes
 
-- Learning Docker, Grafana and Prometheus
+## Testing locally
+
+Game in [client/example/](client/example/) will run on [localhost:1337](http://localhost:1337)
+
+```console
+docker compose up
+```
