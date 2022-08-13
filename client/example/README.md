@@ -1,32 +1,28 @@
-# Hierarchical Finite State Machine
+# Pong with C#
 
-This example shows how to apply the State machine programming
-pattern in GDscript, including Hierarchical States, and a
-pushdown automaton.
+A simple Pong game. This demo shows best practices
+for game development in Godot, including
+[signals](https://docs.godotengine.org/en/latest/getting_started/step_by_step/signals.html).
 
-Language: GDScript
+Language: [C#](https://docs.godotengine.org/en/latest/tutorials/scripting/c_sharp/index.html)
 
 Renderer: GLES 2
 
-Check out this demo on the asset library: https://godotengine.org/asset-library/asset/516
+Note: There is a GDScript version available [here](https://github.com/godotengine/godot-demo-projects/tree/master/2d/pong).
 
-## Why use a state machine
+Note: There is a VisualScript version available [here](https://github.com/godotengine/godot-demo-projects/tree/master/visual_script/pong).
 
-States are common in games. You can use the pattern to:
+Note: There is a GDNative C++ version available [here](https://github.com/godotengine/gdnative-demos/tree/master/cpp/pong).
 
-1. Separate each behavior and transitions between behaviors,
-   thus make scripts shorter and easier to manage.
+Check out this demo on the asset library: https://godotengine.org/asset-library/asset/535
 
-2. Respect the Single Responsibility Principle.
-   Each State object represents one action.
+## How does it work?
 
-3. Improve your code's structure. Look at the scene tree and
-   FileSystem tab: without looking at the code, you'll know
-   what the Player can or cannot do.
-
-You can read more about States in the excellent
-[Game Programming Patterns ebook](https://gameprogrammingpatterns.com/state.html).
+The walls, paddle, and ball are all
+[`Area2D`](https://docs.godotengine.org/en/latest/classes/class_area2d.html)
+nodes. When the ball touches the walls or the paddles,
+they emit signals and modify the ball.
 
 ## Screenshots
 
-![Screenshot](screenshots/fsm-attack.png)
+![Screenshot](screenshots/pong.png)
