@@ -1,5 +1,5 @@
 
-@API=https://localhost:7155/graphql
+@API=http://localhost:3000/graphql
 @GAME_ID={{start.response.body.data.startGame.id}}
 
 ###
