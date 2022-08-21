@@ -16,5 +16,3 @@ If you are using WSL 2, run this
 wsl -d docker-desktop
 sysctl -w vm.max_map_count=262144
 ```
-
-TODO: Fix the ELK-stack configuration in docker-compose
