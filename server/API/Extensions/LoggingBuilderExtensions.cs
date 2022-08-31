@@ -9,7 +9,6 @@ public static class LoggingBuilderExtensions
     {
         var logger = new LoggerConfiguration()
             .Enrich.FromLogContext()
-            .Enrich.WithMachineName()
             .WriteTo.Console()
             .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(
                 new Uri(config["ElasticConfiguration:Uri"]))
@@ -20,7 +19,7 @@ public static class LoggingBuilderExtensions
                     NumberOfReplicas = 1
                 }
             )
-            .Enrich.WithProperty("Environment", environment.EnvironmentName)
+            .Enrich.WithProperty("Environment", environment.EnvironmentName ?? "Undefined env")
             .ReadFrom.Configuration(config)
             .CreateLogger();
         

@@ -14,8 +14,8 @@ X-REQUEST-TYPE: GraphQL
 
 mutation {
     startGame {
-      id
-      facts
+        id
+        facts
     }
 }
 

@@ -25,8 +25,8 @@ public class Mutation
         CancellationToken cancellationToken)
     {
         if (await mediator.Send(new Start.Command(), cancellationToken)
-                is not { IsRight: true } result 
-            || 
+                is not { IsRight: true } result
+            ||
             result.ValueUnsafe() is not { } gameState)
         {
             throw new Exception("Failed to start game");

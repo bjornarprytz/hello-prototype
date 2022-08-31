@@ -13,9 +13,9 @@ public class Start
     public class Handler : IRequestHandlerWrapper<Command, GameStatePayload>
     {
         private readonly State _state;
-        private readonly ILogger<Start> _logger;
+        private readonly ILogger<Handler> _logger;
 
-        public Handler(State state, ILogger<Start> logger)
+        public Handler(State state, ILogger<Handler> logger)
         {
             _state = state;
             _logger = logger;
