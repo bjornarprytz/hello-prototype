@@ -2,9 +2,9 @@ FROM barichello/godot-ci:mono-3.5 as web-export
 
 RUN mkdir -v -p build/web
 
-WORKDIR /example
+WORKDIR /game
 
-COPY example .
+COPY game .
 
 RUN godot -v --export "HTML5" ../build/web/index.html
 

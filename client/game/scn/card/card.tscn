@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://eternal-witness.png" type="Texture" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://vfx/shader/card_art.shader" type="Shader" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.164706, 0.403922, 0.356863, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 12
+shadow_size = 10
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 3 )
+shader_param/size_x = 64.0
+shader_param/size_y = 64.0
+
+[sub_resource type="Theme" id=6]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.0784314, 0.360784, 0.486275, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.0616722, 0.666376, 0.928711, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Card" type="Control"]
+
+[node name="Background" type="Panel" parent="."]
+margin_right = 220.0
+margin_bottom = 300.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+material = SubResource( 5 )
+margin_left = 18.0
+margin_top = 41.0
+margin_right = 202.0
+margin_bottom = 177.0
+theme = SubResource( 6 )
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+
+[node name="Header" type="Panel" parent="Background"]
+margin_left = 8.0
+margin_top = 9.0
+margin_right = 211.0
+margin_bottom = 40.0
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="Name" type="Label" parent="Background/Header"]
+margin_left = 10.0
+margin_top = 8.0
+margin_right = 130.0
+margin_bottom = 22.0
+text = "Mystical Teachings"
+
+[node name="Sprite" type="Sprite" parent="Background/Header"]
+position = Vector2( 184, 17 )
+scale = Vector2( 0.609375, 0.609375 )
+texture = ExtResource( 2 )
+
+[node name="RulesText" type="Panel" parent="Background"]
+margin_left = 9.0
+margin_top = 181.0
+margin_right = 212.0
+margin_bottom = 290.0
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="Label" type="Label" parent="Background/RulesText"]
+margin_left = 28.0
+margin_top = 46.0
+margin_right = 181.0
+margin_bottom = 64.0
+text = "Do something mystical"
+autowrap = true

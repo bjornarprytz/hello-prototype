@@ -16,3 +16,7 @@ If you are using WSL 2, run this
 wsl -d docker-desktop
 sysctl -w vm.max_map_count=262144
 ```
+
+TODO: Try logging on the server, triggering some actions and watch it through Kibana. Continue from [here](https://www.youtube.com/watch?v=0acSdHJfk64&t=337s)
+
+TODO: Maybe set up an account: https://github.com/deviantony/docker-elk/blob/main/.env
