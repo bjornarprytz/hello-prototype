@@ -1,14 +1,5 @@
 version: '3'
 services:
-  web:
-    image: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./html:/usr/share/nginx/html
-    networks:
-      - web
   game:
     container_name: game
     build: client
@@ -22,6 +13,8 @@ services:
 
   es01:
     image: elasticsearch:8.4.0
+    profiles:
+      - analytics
     container_name: es01
     environment:
       - node.name=es01
@@ -43,6 +36,8 @@ services:
   kib01:
     image: kibana:8.4.0
     container_name: kib01
+    profiles:
+      - analytics
     ports:
       - 5601:5601
     depends_on:

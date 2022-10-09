@@ -11,12 +11,13 @@ config_version=4
 [application]
 
 config/name="Cardgame.Prototype"
-run/main_scene="res://scn/main.tscn"
+run/main_scene="res://scn/loading.tscn"
 config/icon="res://icon.png"
 
 [global]
 
 font=false
+Export=false
 
 [gui]
 

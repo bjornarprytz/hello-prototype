@@ -1,16 +1,12 @@
-extends Control
+extends Node2D
 
+const card_class = preload("res://scn/card/card-tactile.tscn")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	for _i in range(0, 5):
+		# istance a new card with 0.1 scale and add it to the tether as a child
+		var card = card_class.instance()
+		card.scale = Vector2(0.1, 0.1)
+		$Tether.add_child(card)
+		# set the card's position to a random position
+		card.position = Vector2(rand_range(0, 100), rand_range(0, 100))

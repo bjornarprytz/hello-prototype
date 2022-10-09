@@ -2,10 +2,16 @@
 
 ## Testing locally
 
-The game in [client/example/](client/example/) will run on [localhost:1337](http://localhost:1337)
+The game in [client/game/](./client/game/) will run on [localhost:1337](http://localhost:1337)
 
 ```console
 docker compose up
+```
+
+## With Analytics
+
+```console
+docker compose --profile analytics up
 ```
 
 > Is your elastic search exiting with `code 78`? Then you need to increase the `max_map_count` on (ref [official documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-prod-prerequisites)).

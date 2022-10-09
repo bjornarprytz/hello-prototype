@@ -59,7 +59,7 @@ corner_radius_top_right = 120
 corner_radius_bottom_right = 120
 corner_radius_bottom_left = 120
 
-[node name="Card" type="Control"]
+[node name="CardUI" type="Control"]
 
 [node name="Background" type="Panel" parent="."]
 margin_right = 1468.0
