@@ -1,29 +1,7 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://scn/card/card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scn/hand/hand.tscn" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Main" type="Node2D"]
 
-[node name="Card" parent="." instance=ExtResource( 1 )]
-margin_left = 34.0
-margin_top = 364.0
-margin_right = 34.0
-margin_bottom = 364.0
-
-[node name="Card2" parent="." instance=ExtResource( 1 )]
-margin_left = 166.0
-margin_top = 365.0
-margin_right = 166.0
-margin_bottom = 365.0
-
-[node name="Card3" parent="." instance=ExtResource( 1 )]
-margin_left = 310.0
-margin_top = 367.0
-margin_right = 310.0
-margin_bottom = 367.0
-
-[node name="Card4" parent="." instance=ExtResource( 1 )]
-margin_left = 560.0
-margin_top = 366.0
-margin_right = 560.0
-margin_bottom = 366.0
+[node name="Hand" parent="." instance=ExtResource( 2 )]

@@ -4,7 +4,6 @@
 [ext_resource path="res://scn/tooltip/tooltip_entry.tscn" type="PackedScene" id=2]
 
 [node name="ToolTip" type="Popup"]
-visible = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -569.0
