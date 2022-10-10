@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://eternal-witness.png" type="Texture" id=1]
+[ext_resource path="res://img/art/eternal-witness.png" type="Texture" id=1]
 [ext_resource path="res://font/kanit-regular-100.tres" type="DynamicFont" id=2]
 [ext_resource path="res://vfx/shader/card_art.shader" type="Shader" id=3]
 [ext_resource path="res://font/noto-medium-72.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scn/card/card-ui.gd" type="Script" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.164706, 0.403922, 0.356863, 1 )
@@ -60,6 +61,7 @@ corner_radius_bottom_right = 120
 corner_radius_bottom_left = 120
 
 [node name="CardUI" type="Control"]
+script = ExtResource( 5 )
 
 [node name="Background" type="Panel" parent="."]
 margin_right = 1468.0

@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Shardomemed_a_viking_haunted_and_ghosted_boat_in_the_middle_of__f5c3cc1c-85ba-4655-bf5a-0a47d466e906.png-b4cb353be37681934b26b0d6c690782c.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/Shardomemed_a_viking_haunted_and_ghosted_boat_in_the_middle_of__f5c3cc1c-85ba-4655-bf5a-0a47d466e906.png"
+dest_files=[ "res://.import/Shardomemed_a_viking_haunted_and_ghosted_boat_in_the_middle_of__f5c3cc1c-85ba-4655-bf5a-0a47d466e906.png-b4cb353be37681934b26b0d6c690782c.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -2,7 +2,7 @@
 
 ## Testing locally
 
-The game in [client/game/](./client/game/) will run on [localhost:1337](http://localhost:1337)
+The game in [client/game/](client/game/README.md) will run on [localhost:1337](http://localhost:1337)
 
 ```console
 docker compose up

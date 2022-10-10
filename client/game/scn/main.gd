@@ -1,4 +1,10 @@
 extends Node2D
 
+var hand
+
 func _ready():
-	pass
+	hand = $Hand
+	hand.add_card()
+	hand.add_card()
+	hand.add_card()
+	hand.add_card()

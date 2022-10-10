@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Anatolii_a_guy_in_wings_sits_on_a_mountain_made_of_their_books__5ce711fe-366d-4adc-9504-5104862d5c9a.png-124c33aacb291dc3d69be4a72ef2cdb8.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/Anatolii_a_guy_in_wings_sits_on_a_mountain_made_of_their_books__5ce711fe-366d-4adc-9504-5104862d5c9a.png"
+dest_files=[ "res://.import/Anatolii_a_guy_in_wings_sits_on_a_mountain_made_of_their_books__5ce711fe-366d-4adc-9504-5104862d5c9a.png-124c33aacb291dc3d69be4a72ef2cdb8.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
