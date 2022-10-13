@@ -23,8 +23,6 @@ shadow_offset = Vector2( 4, 4 )
 
 [sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 1, 1, 1, 0 )
-border_width_left = 10
-border_width_right = 10
 border_color = Color( 0.0627451, 0.666667, 0.929412, 1 )
 
 [sub_resource type="ShaderMaterial" id=5]
@@ -61,6 +59,8 @@ corner_radius_bottom_right = 120
 corner_radius_bottom_left = 120
 
 [node name="CardUI" type="Control"]
+margin_right = 1475.0
+margin_bottom = 2007.0
 script = ExtResource( 5 )
 
 [node name="Background" type="Panel" parent="."]
@@ -80,7 +80,7 @@ custom_styles/panel = SubResource( 7 )
 material = SubResource( 5 )
 margin_left = 9.0
 margin_top = 2.0
-margin_right = 1275.0
+margin_right = 1270.0
 margin_bottom = 937.0
 theme = SubResource( 6 )
 texture = ExtResource( 1 )
