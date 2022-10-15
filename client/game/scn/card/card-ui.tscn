@@ -61,11 +61,13 @@ corner_radius_bottom_left = 120
 [node name="CardUI" type="Control"]
 margin_right = 1475.0
 margin_bottom = 2007.0
+mouse_filter = 2
 script = ExtResource( 5 )
 
 [node name="Background" type="Panel" parent="."]
 margin_right = 1468.0
 margin_bottom = 2000.0
+mouse_filter = 2
 custom_styles/panel = SubResource( 1 )
 
 [node name="ArtFrame" type="Panel" parent="Background"]
@@ -73,6 +75,7 @@ margin_left = 92.0
 margin_top = 255.0
 margin_right = 1372.0
 margin_bottom = 1204.0
+mouse_filter = 2
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 7 )
 
@@ -82,6 +85,7 @@ margin_left = 9.0
 margin_top = 2.0
 margin_right = 1270.0
 margin_bottom = 937.0
+mouse_filter = 2
 theme = SubResource( 6 )
 texture = ExtResource( 1 )
 expand = true
@@ -92,6 +96,7 @@ margin_left = 52.0
 margin_top = 52.0
 margin_right = 1336.0
 margin_bottom = 260.0
+mouse_filter = 2
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
 
@@ -108,6 +113,7 @@ margin_left = 1136.0
 margin_top = -15.0
 margin_right = 1376.0
 margin_bottom = 225.0
+mouse_filter = 2
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 8 )
 
@@ -126,6 +132,7 @@ margin_left = 63.0
 margin_top = 1189.0
 margin_right = 1403.0
 margin_bottom = 1925.0
+mouse_filter = 2
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 3 )
 

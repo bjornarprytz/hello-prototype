@@ -11,14 +11,15 @@ func _ready():
 		dir.list_dir_begin()
 		var file_name = dir.get_next()
 		while file_name != "":
-			if !dir.current_is_dir() && file_name.ends_with(".png"):
+			if !dir.current_is_dir() && file_name.ends_with(".png.import"):
 				arts.append(file_name)
 			file_name = dir.get_next()
 	else:
 		print("An error occurred when trying to access the path.")
 
-	# Set texture to image
-	var art_texture = ImageTexture.new()
-	art_texture.load(art_path + "/" + arts[randi() % arts.size()])
+	var path = art_path + "/" + arts[randi() % arts.size()].trim_suffix(".import")
+	print(path)
 
-	$Background/ArtFrame/TextureRect.texture = art_texture
+	var texture = load(path)
+
+	$Background/ArtFrame/TextureRect.texture = texture

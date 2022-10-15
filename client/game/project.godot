@@ -17,7 +17,7 @@ _global_script_classes=[ {
 "base": "State",
 "class": "CardState",
 "language": "GDScript",
-"path": "res://src/card-state.gd"
+"path": "res://scn/card/states/card-state.gd"
 }, {
 "base": "Node",
 "class": "State",
