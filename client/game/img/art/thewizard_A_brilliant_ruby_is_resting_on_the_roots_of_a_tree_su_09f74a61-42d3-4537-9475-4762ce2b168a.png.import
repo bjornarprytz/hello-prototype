@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_A_brilliant_ruby_is_resting_on_the_roots_of_a_tree_su_09f74a61-42d3-4537-9475-4762ce2b168a.png-8ec419909ab586cba4120b79017d04cd.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_A_brilliant_ruby_is_resting_on_the_roots_of_a_tree_su_09f74a61-42d3-4537-9475-4762ce2b168a.png"
+dest_files=[ "res://.import/thewizard_A_brilliant_ruby_is_resting_on_the_roots_of_a_tree_su_09f74a61-42d3-4537-9475-4762ce2b168a.png-8ec419909ab586cba4120b79017d04cd.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

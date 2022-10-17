@@ -1,0 +1,158 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://vfx/shader/card_art.shader" type="Shader" id=1]
+[ext_resource path="res://img/art/eternal-witness.png" type="Texture" id=2]
+[ext_resource path="res://scn/card/ui/card-ui.gd" type="Script" id=3]
+[ext_resource path="res://font/noto-semibold-80.tres" type="DynamicFont" id=5]
+[ext_resource path="res://font/kanit-semibold-100.tres" type="DynamicFont" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.164706, 0.403922, 0.356863, 1 )
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+corner_detail = 12
+shadow_size = 10
+shadow_offset = Vector2( 4, 4 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 1 )
+shader_param/size_x = 128.0
+shader_param/size_y = 128.0
+shader_param/blur_diameter = 2.1
+shader_param/roundness = 0.1
+
+[sub_resource type="Theme" id=6]
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 1, 1, 1, 0 )
+border_color = Color( 0.0627451, 0.666667, 0.929412, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.607843, 0.603922, 0.592157, 1 )
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color( 0.0616722, 0.666376, 0.928711, 1 )
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0784314, 0.360784, 0.486275, 1 )
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color( 0.380299, 0.800558, 0.983398, 1 )
+corner_radius_top_left = 120
+corner_radius_top_right = 120
+corner_radius_bottom_right = 120
+corner_radius_bottom_left = 120
+
+[node name="CardUI" type="Control"]
+margin_right = 1475.0
+margin_bottom = 2007.0
+mouse_filter = 2
+script = ExtResource( 3 )
+
+[node name="Background" type="Panel" parent="."]
+margin_right = 1468.0
+margin_bottom = 2000.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+
+[node name="Art" type="TextureRect" parent="."]
+material = SubResource( 5 )
+margin_left = 101.0
+margin_top = 257.0
+margin_right = 1362.0
+margin_bottom = 1192.0
+mouse_filter = 2
+theme = SubResource( 6 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="Frame" type="Panel" parent="Art"]
+margin_left = -9.0
+margin_top = -2.0
+margin_right = 1271.0
+margin_bottom = 947.0
+mouse_filter = 2
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 7 )
+
+[node name="HeaderPanel" type="Panel" parent="."]
+margin_left = 52.0
+margin_top = 52.0
+margin_right = 1336.0
+margin_bottom = 260.0
+mouse_filter = 2
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="Name" type="Label" parent="HeaderPanel"]
+margin_left = 62.0
+margin_top = 24.0
+margin_right = 921.0
+margin_bottom = 174.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.435294, 0.435294, 0.435294, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 5
+custom_fonts/font = ExtResource( 6 )
+text = "Mystical Teachings"
+
+[node name="CostPanel" type="Panel" parent="HeaderPanel"]
+margin_left = 1136.0
+margin_top = -15.0
+margin_right = 1376.0
+margin_bottom = 225.0
+mouse_filter = 2
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 8 )
+
+[node name="Cost" type="Label" parent="HeaderPanel/CostPanel"]
+margin_left = 36.0
+margin_top = 31.0
+margin_right = 204.0
+margin_bottom = 207.0
+custom_fonts/font = ExtResource( 6 )
+text = "5"
+align = 1
+valign = 1
+
+[node name="RulesTextPanel" type="Panel" parent="."]
+margin_left = 63.0
+margin_top = 1189.0
+margin_right = 1403.0
+margin_bottom = 1925.0
+mouse_filter = 2
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 3 )
+
+[node name="RulesText" type="Label" parent="RulesTextPanel"]
+margin_left = 49.0
+margin_top = 43.0
+margin_right = 1294.0
+margin_bottom = 670.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.435294, 0.435294, 0.435294, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/line_spacing = 0
+custom_constants/shadow_offset_y = 5
+custom_constants/shadow_as_outline = 0
+custom_fonts/font = ExtResource( 5 )
+text = "Do something mystical"
+align = 1
+valign = 1
+autowrap = true

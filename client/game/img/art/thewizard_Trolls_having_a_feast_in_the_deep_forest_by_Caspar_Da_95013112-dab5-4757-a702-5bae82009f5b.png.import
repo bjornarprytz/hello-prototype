@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_Trolls_having_a_feast_in_the_deep_forest_by_Caspar_Da_95013112-dab5-4757-a702-5bae82009f5b.png-cf32222d6d66b5bb52fc2a472e34895b.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_Trolls_having_a_feast_in_the_deep_forest_by_Caspar_Da_95013112-dab5-4757-a702-5bae82009f5b.png"
+dest_files=[ "res://.import/thewizard_Trolls_having_a_feast_in_the_deep_forest_by_Caspar_Da_95013112-dab5-4757-a702-5bae82009f5b.png-cf32222d6d66b5bb52fc2a472e34895b.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

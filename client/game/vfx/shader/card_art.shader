@@ -1,7 +1,7 @@
 shader_type canvas_item;
 
-uniform float size_x = 64.0; // blocks by x direction
-uniform float size_y = 64.0; // blocks by y direction
+uniform float size_x = 128.0; // blocks by x direction
+uniform float size_y = 128.0; // blocks by y direction
 uniform float blur_diameter = 2.1; // around 2.2 is usually good
 uniform float roundness = 0.1; // [0.0 - 1.0] Lower values make the corners more rounded
 

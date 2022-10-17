@@ -5,9 +5,9 @@ const card_class = preload("res://scn/card/card-tactile.tscn")
 func _ready():
 	pass
 
-func add_card():
-	var card = card_class.instance()
-	card.scale = Vector2(0.1, 0.1)
+func add_card(card_data: Card.Data):
+	var card = card_class.instance().init(card_data)
+	card.scale = Vector2(0.2, 0.2)
 	$Tether.add_child(card)
 	_layout()
 

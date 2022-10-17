@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_Shadow_mage_casting_crafting_a_curse_in_a_cauldron_Az_5495a96a-4b01-41c4-8fb1-96096654f554.png-b064aa349d71955f46ceccd836a8a44f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_Shadow_mage_casting_crafting_a_curse_in_a_cauldron_Az_5495a96a-4b01-41c4-8fb1-96096654f554.png"
+dest_files=[ "res://.import/thewizard_Shadow_mage_casting_crafting_a_curse_in_a_cauldron_Az_5495a96a-4b01-41c4-8fb1-96096654f554.png-b064aa349d71955f46ceccd836a8a44f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

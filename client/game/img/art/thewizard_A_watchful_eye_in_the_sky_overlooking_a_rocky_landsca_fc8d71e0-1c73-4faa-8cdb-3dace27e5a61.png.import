@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_A_watchful_eye_in_the_sky_overlooking_a_rocky_landsca_fc8d71e0-1c73-4faa-8cdb-3dace27e5a61.png-376607c0d46d19a4dab2786e0e23f6d6.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_A_watchful_eye_in_the_sky_overlooking_a_rocky_landsca_fc8d71e0-1c73-4faa-8cdb-3dace27e5a61.png"
+dest_files=[ "res://.import/thewizard_A_watchful_eye_in_the_sky_overlooking_a_rocky_landsca_fc8d71e0-1c73-4faa-8cdb-3dace27e5a61.png-376607c0d46d19a4dab2786e0e23f6d6.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
