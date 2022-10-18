@@ -1,13 +1,13 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://vfx/shader/card_art.shader" type="Shader" id=1]
-[ext_resource path="res://img/art/eternal-witness.png" type="Texture" id=2]
+[ext_resource path="res://img/art/thewizard_A_mage_casting_a_fireball_spell_on_a_demon_in_the_woo_0e651524-3d25-4a5b-880b-fbbf8ee752b7.png" type="Texture" id=2]
 [ext_resource path="res://scn/card/ui/card-ui.gd" type="Script" id=3]
 [ext_resource path="res://font/noto-semibold-80.tres" type="DynamicFont" id=5]
 [ext_resource path="res://font/kanit-semibold-100.tres" type="DynamicFont" id=6]
 
 [sub_resource type="StyleBoxFlat" id=1]
-bg_color = Color( 0.164706, 0.403922, 0.356863, 1 )
+bg_color = Color( 0.458824, 0.458824, 0.458824, 1 )
 border_width_left = 30
 border_width_top = 30
 border_width_right = 30
@@ -30,29 +30,25 @@ shader_param/roundness = 0.1
 
 [sub_resource type="Theme" id=6]
 
-[sub_resource type="StyleBoxFlat" id=7]
-bg_color = Color( 1, 1, 1, 0 )
-border_color = Color( 0.0627451, 0.666667, 0.929412, 1 )
-
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.607843, 0.603922, 0.592157, 1 )
 border_width_left = 20
 border_width_top = 20
 border_width_right = 20
 border_width_bottom = 20
-border_color = Color( 0.0616722, 0.666376, 0.928711, 1 )
+border_color = Color( 0.321569, 0.32549, 0.32549, 1 )
 corner_radius_top_left = 30
 corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id=8]
-bg_color = Color( 0.0784314, 0.360784, 0.486275, 1 )
+bg_color = Color( 0.321569, 0.32549, 0.32549, 1 )
 border_width_left = 20
 border_width_top = 20
 border_width_right = 20
 border_width_bottom = 20
-border_color = Color( 0.380299, 0.800558, 0.983398, 1 )
+border_color = Color( 0.864746, 0.856301, 0.830967, 1 )
 corner_radius_top_left = 120
 corner_radius_top_right = 120
 corner_radius_bottom_right = 120
@@ -75,21 +71,12 @@ material = SubResource( 5 )
 margin_left = 101.0
 margin_top = 257.0
 margin_right = 1362.0
-margin_bottom = 1192.0
+margin_bottom = 1273.0
 mouse_filter = 2
 theme = SubResource( 6 )
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 5
-
-[node name="Frame" type="Panel" parent="Art"]
-margin_left = -9.0
-margin_top = -2.0
-margin_right = 1271.0
-margin_bottom = 947.0
-mouse_filter = 2
-size_flags_vertical = 3
-custom_styles/panel = SubResource( 7 )
 
 [node name="HeaderPanel" type="Panel" parent="."]
 margin_left = 52.0
@@ -133,7 +120,7 @@ valign = 1
 
 [node name="RulesTextPanel" type="Panel" parent="."]
 margin_left = 63.0
-margin_top = 1189.0
+margin_top = 1248.0
 margin_right = 1403.0
 margin_bottom = 1925.0
 mouse_filter = 2
@@ -142,9 +129,9 @@ custom_styles/panel = SubResource( 3 )
 
 [node name="RulesText" type="Label" parent="RulesTextPanel"]
 margin_left = 49.0
-margin_top = 43.0
+margin_top = 35.0
 margin_right = 1294.0
-margin_bottom = 670.0
+margin_bottom = 640.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.435294, 0.435294, 0.435294, 1 )
 custom_constants/shadow_offset_x = 5
