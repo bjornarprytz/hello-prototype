@@ -25,14 +25,17 @@ func _ready() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	state.handle_input(event)
 
-
 func _process(delta: float) -> void:
 	state.update(delta)
-
 
 func _physics_process(delta: float) -> void:
 	state.physics_update(delta)
 
+func _on_mouse_entered():
+	state.mouse_entered()
+
+func _on_mouse_exited():
+	state.mouse_exited()
 
 # This function calls the current state's exit() function, then changes the active state,
 # and calls its enter function.

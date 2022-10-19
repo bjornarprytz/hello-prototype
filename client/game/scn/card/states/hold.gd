@@ -6,6 +6,5 @@ func update(delta: float):
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
-		if event.button_index == BUTTON_LEFT:
-			if !event.is_pressed():
-				state_machine.transition_to("Idle")
+		if event.button_index == BUTTON_LEFT && !event.is_pressed():
+			state_machine.transition_to("Idle")

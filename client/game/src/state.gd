@@ -23,6 +23,11 @@ func update(_delta: float) -> void:
 func physics_update(_delta: float) -> void:
 	pass
 
+func mouse_entered():
+	pass
+	
+func mouse_exited():
+	pass
 
 # Virtual function. Called by the state machine upon changing the active state. The `msg` parameter
 # is a dictionary with arbitrary data the state can use to initialize itself.
