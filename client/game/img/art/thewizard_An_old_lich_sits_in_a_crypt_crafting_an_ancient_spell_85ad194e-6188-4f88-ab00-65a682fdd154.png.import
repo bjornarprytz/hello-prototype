@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_An_old_lich_sits_in_a_crypt_crafting_an_ancient_spell_85ad194e-6188-4f88-ab00-65a682fdd154.png-3b22298396cdbe97930a1626666af7e7.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_An_old_lich_sits_in_a_crypt_crafting_an_ancient_spell_85ad194e-6188-4f88-ab00-65a682fdd154.png"
+dest_files=[ "res://.import/thewizard_An_old_lich_sits_in_a_crypt_crafting_an_ancient_spell_85ad194e-6188-4f88-ab00-65a682fdd154.png-3b22298396cdbe97930a1626666af7e7.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

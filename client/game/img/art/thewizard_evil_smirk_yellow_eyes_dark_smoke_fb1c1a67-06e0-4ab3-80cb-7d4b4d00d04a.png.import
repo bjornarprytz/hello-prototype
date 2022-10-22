@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_evil_smirk_yellow_eyes_dark_smoke_fb1c1a67-06e0-4ab3-80cb-7d4b4d00d04a.png-d0f11857e51c27e00cbf69abf52e7750.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_evil_smirk_yellow_eyes_dark_smoke_fb1c1a67-06e0-4ab3-80cb-7d4b4d00d04a.png"
+dest_files=[ "res://.import/thewizard_evil_smirk_yellow_eyes_dark_smoke_fb1c1a67-06e0-4ab3-80cb-7d4b4d00d04a.png-d0f11857e51c27e00cbf69abf52e7750.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

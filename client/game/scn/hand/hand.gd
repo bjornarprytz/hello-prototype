@@ -1,18 +1,29 @@
+class_name Hand
 extends Node2D
 
 const card_class = preload("res://scn/card/card-tactile.tscn")
 
+var cards: Array
+
 func _ready():
 	pass
+
+
+func get_cards() -> Array:
+	return cards
 
 func add_card(card_data: Card.Data):
 	var card = card_class.instance().init(card_data)
 	card.scale = Vector2(0.2, 0.2)
 	$Tether.add_child(card)
+	cards.append(card)
 	_layout()
 
 func _layout():
-	var card_count = $Tether.get_child_count()
+	var card_count = cards.size()
+	if (card_count == 0):
+		return
+
 	var spacing = 1.0 / card_count;
 
 	var rotatingThing = max(1, card_count - 1)
@@ -30,4 +41,3 @@ func _layout():
 		
 		# Set the card's rotation to go from -30 to 30 degrees
 		card.rotation = deg2rad(-30 + 60 * i / rotatingThing)
-		

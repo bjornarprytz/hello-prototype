@@ -19,6 +19,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scn/card/states/card-state.gd"
 }, {
+"base": "Node2D",
+"class": "Hand",
+"language": "GDScript",
+"path": "res://scn/hand/hand.gd"
+}, {
+"base": "State",
+"class": "HandState",
+"language": "GDScript",
+"path": "res://scn/hand/states/hand-state.gd"
+}, {
 "base": "Node",
 "class": "State",
 "language": "GDScript",
@@ -32,6 +42,8 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Card": "",
 "CardState": "",
+"Hand": "",
+"HandState": "",
 "State": "",
 "StateMachine": ""
 }

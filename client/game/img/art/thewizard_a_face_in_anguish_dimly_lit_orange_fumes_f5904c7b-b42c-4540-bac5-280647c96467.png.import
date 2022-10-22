@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/thewizard_a_face_in_anguish_dimly_lit_orange_fumes_f5904c7b-b42c-4540-bac5-280647c96467.png-c0a7880453bd8448c2e8fc3b81a3b1df.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://img/art/thewizard_a_face_in_anguish_dimly_lit_orange_fumes_f5904c7b-b42c-4540-bac5-280647c96467.png"
+dest_files=[ "res://.import/thewizard_a_face_in_anguish_dimly_lit_orange_fumes_f5904c7b-b42c-4540-bac5-280647c96467.png-c0a7880453bd8448c2e8fc3b81a3b1df.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
