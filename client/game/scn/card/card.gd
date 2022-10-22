@@ -16,5 +16,5 @@ func init(card_data: Data):
 	$CardUI.set_color(card_data.ColorId)
 	return self
 
-
-
+func get_center() -> Vector2:
+	return position + ((Vector2($CardUI.rect_size.x / 2.0, $CardUI.rect_size.y / 4.0)) * scale)
