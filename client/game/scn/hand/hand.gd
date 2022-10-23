@@ -26,8 +26,6 @@ func _layout():
 
 	var spacing = 1.0 / card_count;
 
-	var rotatingThing = max(1, card_count - 1)
-
 	var start = $Tether.get_points()[0]
 	var end = $Tether.get_points()[1]
 
@@ -38,6 +36,4 @@ func _layout():
 		var pos = lerp(start, end, i * spacing)
 		# Position the card along the tether line with an offset on the y-axis equal to the half the height of the card
 		card.position = pos
-		
-		# Set the card's rotation to go from -30 to 30 degrees
-		card.rotation = deg2rad(-30 + 60 * i / rotatingThing)
+

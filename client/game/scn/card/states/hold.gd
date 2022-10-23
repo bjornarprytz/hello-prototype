@@ -2,16 +2,17 @@ extends CardState
 
 var rotationSpeed = 0.9
 
-func update(delta: float):
+func update(_delta: float):
 	var cardCenter = card.get_center()
-	var force = (get_viewport().get_mouse_position() - cardCenter) * 0.1
-
+	var mousePosition = get_viewport().get_mouse_position()
+	
+	print("cardCenter = ", cardCenter)
+	print("mousePosition = ", mousePosition)
+	
+	var force = (mousePosition - cardCenter) * 0.25
 	var velocity = 0.9 * force
+
 	card.position += velocity
-	
-	var angleTo = -card.rotation
-	card.rotate(sign(angleTo) * min(delta * rotationSpeed, abs(angleTo)))
-	
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
