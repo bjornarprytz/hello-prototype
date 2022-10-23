@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://img/card-back-5.png" type="Texture" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.458824, 0.458824, 0.458824, 0 )
+draw_center = false
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+corner_detail = 12
+shadow_size = 10
+shadow_offset = Vector2( 4, 4 )
+
+[node name="CardBack" type="Control"]
+margin_right = 300.0
+margin_bottom = 404.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 26.0
+margin_top = 25.0
+margin_right = 1451.0
+margin_bottom = 1972.0
+texture = ExtResource( 1 )
+stretch_mode = 1
+
+[node name="Background" type="Panel" parent="."]
+margin_right = 1475.0
+margin_bottom = 2000.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
