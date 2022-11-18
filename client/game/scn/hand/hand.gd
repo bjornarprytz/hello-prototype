@@ -15,7 +15,8 @@ func get_cards() -> Array:
 func add_card(card_data: Card.Data):
 	var card = card_class.instance().init(card_data)
 	card.scale = Vector2(0.2, 0.2)
-	$Tether.add_child(card)
+	
+	get_parent().add_child(card)
 	cards.append(card)
 	_layout()
 
@@ -24,16 +25,9 @@ func _layout():
 	if (card_count == 0):
 		return
 
-	var spacing = 1.0 / card_count;
+	# Place the cards on a line along the bottom of the screen
 
-	var start = $Tether.get_points()[0]
-	var end = $Tether.get_points()[1]
-
+	var y = position.y
+	var center = get_viewport_rect().size.x / 2
 	for i in range(card_count):
-		# Get the card
-		var card = $Tether.get_child(i)
-		# Space it out between the start and end
-		var pos = lerp(start, end, i * spacing)
-		# Position the card along the tether line with an offset on the y-axis equal to the half the height of the card
-		card.position = pos
-
+		cards[i].position = Vector2(center + lerp(-400.0, 0.0, i), y)

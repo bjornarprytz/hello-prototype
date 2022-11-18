@@ -3,16 +3,9 @@ extends CardState
 var rotationSpeed = 0.9
 
 func update(_delta: float):
-	var cardCenter = card.get_center()
 	var mousePosition = get_viewport().get_mouse_position()
 	
-	print("cardCenter = ", cardCenter)
-	print("mousePosition = ", mousePosition)
-	
-	var force = (mousePosition - cardCenter) * 0.25
-	var velocity = 0.9 * force
-
-	card.position += velocity
+	card.position = lerp(card.position, mousePosition, 0.1)
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:

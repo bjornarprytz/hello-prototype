@@ -8,7 +8,7 @@ class Data:
 	var RulesText: String
 	var ColorId: String
 
-func init(card_data: Data):
+func init(card_data: Data) -> Card:
 	$CardUI.set_art(card_data.Art)
 	$CardUI.set_name(card_data.Name)
 	$CardUI.set_cost(card_data.Cost)
